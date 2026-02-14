@@ -34,7 +34,7 @@ def _parse_salary_line(line, line_number):
     except ValueError:
         print(
             f"Error: Line {line_number} is malformed or has wrong data, so ignored until it is fixed. "
-            "Please check this line and fix its values to include them into calculation."
+            "Please check this line and fix its values to include them into processing."
         )
         return None
 
