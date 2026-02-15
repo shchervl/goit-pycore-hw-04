@@ -222,7 +222,6 @@ def main():
     Main application loop for the contact management bot.
 
     Handles user input, routes commands, and provides interactive feedback.
-    Supports commands: hello, add, change, phone, all, help, close/exit
     """
     print(f"{BOT_COLOR}Welcome to the assistant bot!{Style.RESET_ALL}")
 
@@ -247,7 +246,6 @@ def main():
             result = commands[command](args)
             if result:
                 print(result)
-                continue
         elif command:  # Only show error if command was entered and it's invalid
             print_error("Invalid command. Please use one of the list below:")
             print_dict_as_list(COMMANDS_HELP_INFO)
